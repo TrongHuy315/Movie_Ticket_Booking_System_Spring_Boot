@@ -2,15 +2,8 @@ package cinema.system.demo.dto.response;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+import lombok.Data;
+@Data
 public class AdminResponse {
     private String groupName;
 
@@ -21,12 +14,4 @@ public class AdminResponse {
     private String password;
 
     private Float priceForChildren;
-
-    private TheaterResponse theater;
-
-    private String bank_name;
-
-    private String stk;
-
-    private List<BonusResponse> bonus;
 }

@@ -2,25 +2,19 @@ package cinema.system.demo.dto.response;
 
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class UserResponse {
     private String fullName;
 
     private Integer age;
 
-    private String email;
-
     private String phone;
 
-    private String cccd;
+    private String email;
+
+    private ProfileResponse profile;
 
     private List<SeatResponse> seat;
 }
